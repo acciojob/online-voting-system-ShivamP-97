@@ -1,21 +1,29 @@
 package com.driver;
-public class Election {
-    private Candidate[] candidates;
-    private Voter[] voters;
 
-    public Election(Candidate[] candidates, Voter[] voters) {
-        this.candidates = candidates;
-        this.voters = voters;
+public class Voter {
+    private int voterId;
+    private String voterName;
+    private boolean hasVoted;
+
+    public Voter(int voterId, String voterName) {
+        this.voterId = voterId;
+        this.voterName = voterName;
+        this.hasVoted = false;
     }
 
-    public void castVote(int voterId, int candidateId) {
-    	//your code goes here
+    public int getVoterId() {
+        return voterId;
     }
 
-    public Candidate getWinner() {
-    	Candidate winner = candidates[0];
-    	//your code goes here
-    
-    	return winner;
+    public String getVoterName() {
+        return voterName;
+    }
+
+    public boolean hasVoted() {
+        return hasVoted;
+    }
+
+    public void setHasVoted(boolean hasVoted) {
+        this.hasVoted = hasVoted;
     }
 }

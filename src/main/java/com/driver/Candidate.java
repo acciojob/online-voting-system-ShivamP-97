@@ -1,4 +1,5 @@
 package com.driver;
+
 public class Candidate {
     private int candidateId;
     private String candidateName;
@@ -11,21 +12,18 @@ public class Candidate {
     }
 
     public int getCandidateId() {
-        //your code goes here
-    	return candidateId;
+        return candidateId;
     }
 
     public String getCandidateName() {
-    	//your code goes here
-    	return candidateName;
+        return candidateName;
     }
 
     public int getVotesReceived() {
-    	//your code goes here
-    	return votesReceived;
+        return votesReceived;
     }
 
     public void addVote() {
-        //your code goes here
+        votesReceived++;
     }
 }
